@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="main">
+            <img src="images/Mio_Render_upsacle_real-esrgan.png" alt="" srcset="" class="background">
+            <div class="text">
+                <p>Hi,<br>
+                Im BAGAS and this is my<br>
+                PORTFOLIO</p>
+                <button class="open" id="openPopUp" onclick="openPopUp()"><img src="user.svg" alt="">ABOUT ME</button>
+            </div>
+        </div>
+        <div class="icon" id="open" onclick="openNav()" id="closeNav">
+            <img src="menu.svg" alt="">
+        </div>
+        <div class="nav" id="closeNav">
+            <div class="link">
+            <a href="#"><img src="home.svg" alt="">Home</a>
+            <a href="#" onclick="openSkills()"><img src="user.svg" alt="">Skills</a>
+            <a href="#" onclick="openService()"><img src="info.svg" alt="">Service</a>
+            <a href="#" onclick="openContact()"><img src="call.svg" alt="">Contact</a>
+            </div>
+            <div class="links">
+                <a href="#"><img src="images/deviantart.svg" alt=""></a>
+                <a href="#"><img src="images/dribbble.svg" alt=""></a>
+                <a href="#"><img src="images/github.svg" alt=""></a>
+                <a href="#"><img src="images/pinterest.svg" alt=""></a>
+                <a href="#"><img src="images/pixiv.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="popup" id="closePopUp">
+            <div class="pills"></div>
+            <h1>Want to<br>
+                Know About Me?</h1>
+            <p> lorem ipsum dolor sit amet, consectetur<br>
+                adipiscing elit, set do eiusmod tempor<br>
+                incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p> lorem ipsum dolor sit amet, consectetur<br>
+                adipiscing elit, set do eiusmod tempor<br>
+                incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="button">
+            <button class="porto">Download CV</button>
+            <button class="close" id="closePopUp" onclick="closePopUp()"><img src="arrow.svg" alt="" style="width: 40px; height: 40px;"></button>
+            </div>
+        </div>
+        <div class="skills" id="closeSkills">
+            <h1>Some any<br>
+                Skills I Have</h1>
+                <p></p>
+                <button onclick="closeSkills()">Close</button>
+        </div>
+        <div class="service" id="closeService">
+            <h1>What Service<br>
+                I Provides?</h1>
+            <p>I can design and draw some illustration<br>
+                for personal or bussines license.</p>
+            <p style="padding-top: 20px;">Lets Order Here:</p>
+            <div class="servicebtn">
+                <a href="#">
+                    <img src="" alt="">
+                    <p>User Interface</p>
+                    <img src="" alt="">
+                </a>
+                <a href="#">
+                    <img src="" alt="">
+                    <p>User Interface</p>
+                    <img src="" alt="">
+                </a>
+                <a href="#">
+                    <img src="" alt="">
+                    <p>User Interface</p>
+                    <img src="" alt="">
+                </a>
+                <a href="#">
+                    <img src="" alt="">
+                    <p>User Interface</p>
+                    <img src="" alt="">
+                </a>
+            </div>
+            <button onclick="closeService()">Recent Works</button>
+        </div>
+        <div class="Contact" id="closeContact">
+            <div class="pills"></div>
+            <h1>Have Some<br>
+                Questions for Me?</h1>
+            <p>Drop your message here:</p>
+            <textarea name="" id="" cols="32" rows="5" style="margin-top: 20px; border-radius: 12px; border: none; padding: 10px; font-size: 16px; background-color: #454554; color: white;"></textarea>
+            <button onclick="send()">SEND</button>
+
+        </div>
+    </div>
+</body>
+</html>

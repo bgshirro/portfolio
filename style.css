@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fafafa;
+    height: 393px;
+    width: 100%;
+    font-family: 'Poppins', 'Roboto';
+    overflow: hidden;
+    bottom: -10%;
+}
+.main{
+    width: 393px;
+    height: 844px;
+    background-color: #161621;
+    overflow: hidden;
+}
+.main .background{
+    width: 470px;
+    position: absolute;
+    bottom: -200px;
+    left: -30px;
+    overflow: hidden;
+}
+.main .text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 393px;
+    height: 220px;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
+    bottom: 0;
+    padding: 30px;
+}
+.text p{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+.text button, .Contact button{
+    width: 188.5px;
+    height: 51px;
+    background-color: #ca2424;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+.text button img{
+    width: 18px;
+    height: 18px;
+    margin-left: -7px;
+    margin-right: 10px;
+    margin-bottom: -3px;
+    filter: invert(1000%) sepia(0) saturate(0) hue-rotate(0deg) brightness(1000%) contrast(1000%);
+}
+.nav{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    background-color: #161621;
+    top: 0;
+    box-shadow: 100px 0px 15px rgba(0, 0, 0, 0.3);
+    left: -600px;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+.link a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.link a img{
+    height: 16px;
+    width: 16px;
+    margin-right: 16px;
+    filter: invert(1000%) sepia(0) saturate(0) hue-rotate(0deg) brightness(1000%) contrast(1000%);
+}
+.links{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+}
+.links a{
+    width: 22px;
+    height: 22px;
+}
+.icon{
+    position: absolute;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    right: 15px;
+    bottom: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #DC2727;
+    cursor: pointer;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding: 12px;
+}
+.icon img, .close img{
+    size: 50%;
+    filter: invert(1000%) sepia(0) saturate(0) hue-rotate(0deg) brightness(1000%) contrast(1000%);
+}
+a:before a:hover{
+    left: 20.5%;
+    transition: 0.2s all;
+}
+a{
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 12pt;
+}
+.link:hover a{
+    color: rgb(75, 75, 75);
+}
+.link:hover a:hover{
+    color: rgb(255, 255, 255);
+}
+.popup, .Contact{
+    width: 393px;
+    height: 400px;
+    position: absolute;
+    bottom: -1000px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #161621;
+    box-shadow: 0px -375px 0px rgba(0, 0, 0, 0.3);
+    padding: 50px 35px;
+    z-index: 1000;
+    color: white;
+}
+.popup .pills, .Contact .pills{
+    position: absolute;
+    top: 15px;
+    left: 45%;
+    height: 5px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+}
+.popup h1, .Contact h1{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.popup p, .Contact p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.popup .button {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 30px;
+}
+.popup .porto{
+    width: 253px;
+    height: 51px;
+    font-size: 18px;
+    font-weight: 550;
+    color: white;
+    background-color: #DC2727;
+    border: none;
+    border-radius: 12px;
+    letter-spacing: 1px;
+}
+.button .close{
+    width: 51px;
+    height: 51px;
+    border: none;
+    border-radius: 12px;
+    background-color: #DC2727;
+    margin-left: 20px;
+    padding: 5.5px;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+}
+#closeNav, #closePopUp, #closeSkills, #closeService, #closeContact {
+    transition: 0.5s all;
+    animation-delay: 0.5s;
+}
+button{
+    cursor: pointer;
+}
+.skills, .service{
+    width: 393px;
+    height: 100%;
+    position: absolute;
+    top: -1000px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #161621;
+    padding: 50px 35px;
+    z-index: 1000;
+    color: white;
+    box-shadow: 0px -35px 0px rgba(0, 0, 0, 0.3);
+}
+.skills h1, .service h1{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
