@@ -39,7 +39,7 @@ body{
     color: white;
     font-weight: 400;
 }
-.text button, .Contact button{
+.text button{
     width: 188.5px;
     height: 51px;
     background-color: #ca2424;
@@ -254,5 +254,13 @@ button{
     }
     .skills, .service{
         padding: 100px 0px 70px 0px;
+    }
+    .Contact button{
+        position: absolute;
+        bottom: 30px;
+        left: 35px;
+    }
+    .Contact textarea{
+        width: 100%;
     }
 }
